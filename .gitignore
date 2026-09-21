@@ -1,0 +1,21 @@
+cat > .gitignore << 'EOF'
+# Dependencies — never push these
+node_modules/
+**/node_modules/
+
+# Environment files — never push secrets
+.env
+**/.env
+
+# Build output
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+EOF
